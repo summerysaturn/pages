@@ -12,14 +12,26 @@ body {
   padding: 0 !important;
 }
 
+.bg-black {
+  background: #111;
+}
+
 .bg-gradient-primary-lr {
-  background: #2d7cd1;
-  background: linear-gradient(135deg, #2d7cd1 0%, #00ff95 100%);
+  background: rgb(85, 139, 194);
+  background: linear-gradient(
+    133deg,
+    rgba(85, 139, 194, 1) 0%,
+    rgba(164, 82, 213, 1) 100%
+  );
 }
 
 .bg-gradient-primary-rl {
-  background: #2d7cd1;
-  background: linear-gradient(45deg, #2d7cd1 0%, #00ff95 100%);
+  background: rgb(85, 139, 194);
+  background: linear-gradient(
+    133deg,
+    rgba(85, 139, 194, 1) 0%,
+    rgba(164, 82, 213, 1) 100%
+  );
 }
 
 .repo-img .fa-icon {

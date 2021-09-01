@@ -2,7 +2,10 @@
 <html class="h-100" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>summerysaturn</title>
     <link href="css/generic.css" rel="stylesheet" />
     <link
@@ -39,18 +42,23 @@
     <script src="https://use.fontawesome.com/749a0c83f8.js"></script>
   </head>
 
-  <body class="d-flex flex-column h-100 bg-light">
-    <div class="container bg-body mb-3 rounded-3 rounded-bottom">
-      <nav class="navbar navbar-light bg-body w-100 ps-5 pe-5">
-        <a class="navbar-brand" href="#"> Charlotte Ward </a>
+  <body class="d-flex flex-column h-100 bg-black">
+    <div class="container-sm bg-dark mb-3 rounded-3 rounded-bottom">
+      <nav class="navbar navbar-dark bg-dark w-100 ps-5 pe-5">
+        <a class="navbar-brand" href="#"> Lily Riley </a>
         <ul class="nav nav-pills">
           <li class="nav-item me-3">
-            <a type="button" class="btn btn-dark active" href="#">Home</a>
+            <a type="button" class="btn btn-dark active" href="#"
+              >Home</a
+            >
           </li>
           <li class="nav-item dropdown me-3">
             <button
               type="button"
-              class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+              class="
+                btn btn-dark
+                dropdown-toggle dropdown-toggle-split
+              "
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -65,7 +73,10 @@
             >
               <li>
                 <h6 class="dropdown-header">Standout Pages</h6>
-                <a class="dropdown-item" href="y1-university/index.html">
+                <a
+                  class="dropdown-item"
+                  href="y1-university/index.html"
+                >
                   y1-university
                 </a>
               </li>
@@ -81,7 +92,7 @@
 
       <div class="p-5 bg-gradient-primary-rl text-white pb-3">
         <div class="mb-5 d-flex">
-          <h1 class="display-2 ms-3">Charlotte Ward</h1>
+          <h1 class="display-2 ms-3">About Me</h1>
         </div>
       </div>
 
@@ -89,31 +100,33 @@
         <div class="d-flex justify-content-center">
           <a
             class="text-decoration-none"
-            href="https://github.com/summerysaturn"
+            href="https://github.com/lilykiwi"
           >
             <div id="img-target"></div>
           </a>
         </div>
       </div>
 
-      <div class="p-5 pt-3 pb-0"><h2>Profile</h2></div>
+      <div class="p-5 pt-3 pb-0 text-white"><h2>Profile</h2></div>
 
       <div class="pe-3 ps-3">
         <hr class="bg-light" />
       </div>
 
-      <div class="p-5 pt-3">
+      <div class="p-5 pt-3 text-light">
         <p>
-          I’m a skilled developer and Linux user focussed on forwarding the
-          cause for Free & Open Source Software initiatives. I’m working on my
-          degree for Computer Science for Games at the moment, and I’m working
-          on some projects on the side. I am interested in creating and
-          developing, with big ideas in art, design, game development,
-          fabrication and electronics. I’m interested in maker culture and
-          speedrunning, and spend a fair amount of my time gaming. Experienced
-          with photography and graphic design, blending my functional skills
-          with aesthetic skills. I have a good eye for aesthetic and a good
-          understanding of technical subjects.
+          I’m a skilled developer and Linux user focussed on
+          forwarding the cause for Free & Open Source Software
+          initiatives. I’m working on my degree for Computer Science
+          for Games at the moment, and I’m working on some projects on
+          the side. I am interested in creating and developing, with
+          big ideas in art, design, game development, fabrication and
+          electronics. I’m interested in maker culture and
+          speedrunning, and spend a fair amount of my time gaming.
+          Experienced with photography and graphic design, blending my
+          functional skills with aesthetic skills. I have a good eye
+          for aesthetic and a good understanding of technical
+          subjects.
         </p>
 
         <div class="d-flex">
@@ -129,7 +142,10 @@
           </div>
         </div>
 
-        <a type="button" class="btn btn-dark" href="mailto:char73@pm.me"
+        <a
+          type="button"
+          class="btn btn-dark"
+          href="mailto:lilykiwi9911@pm.me"
           >Send an Email</a
         >
       </div>
@@ -165,7 +181,7 @@
       <div class="container">
         <a
           class="text-decoration-none text-dark fs-3"
-          href="https://twitter.com/summerysaturn"
+          href="https://twitter.com/lilykiwi_"
         >
           <i
             class="fa-icon fa fa-twitter fadein"
@@ -175,7 +191,7 @@
         </a>
         <a
           class="text-decoration-none text-dark fs-3"
-          href="https://github.com/summerysaturn"
+          href="https://github.com/lilykiwi"
         >
           <i
             class="fa-icon fa fa-github fadein"
@@ -183,17 +199,7 @@
             aria-hidden="true"
           ></i>
         </a>
-        <a
-          class="text-decoration-none text-dark fs-3"
-          href="https://ko-fi.com/summerysaturn"
-        >
-          <i
-            class="fa-icon fa fa-coffee fadein"
-            alt="Ko-Fi"
-            aria-hidden="true"
-          ></i>
-        </a>
-        <p>Copyright &copy; Charlotte Ward 2020-2021</p>
+        <p>copyright &copy; lilykiwi 2020-2021</p>
       </div>
     </footer>
   </body>
@@ -202,14 +208,16 @@
   <script>
     // simple ajax-like get request for repos on my account
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.github.com/users/summerysaturn/repos");
+    xhr.open("GET", "https://api.github.com/users/lilykiwi/repos");
     xhr.onload = function () {
       if (xhr.status === 200) {
         let response = JSON.parse(xhr.responseText);
         // display the repos using the function below
         displayData(response);
       } else {
-        console.error("couldn't fetch repos! status error: " + xhr.status);
+        console.error(
+          "couldn't fetch repos! status error: " + xhr.status
+        );
       }
     };
     xhr.send();
@@ -223,14 +231,35 @@
         { name: "5e-strife", status: "Development", image: true },
         { name: "archive", status: "Archive", image: true },
         { name: "countdown-applet", status: "Archive", image: true },
-        { name: "FaceFillers-Electron", status: "Archive", image: true },
+        {
+          name: "FaceFillers-Electron",
+          status: "Archive",
+          image: true,
+        },
         { name: "char-dotfiles", status: "Maintenance", image: true },
-        { name: "luna-superpi-discord", status: "Development", image: true },
+        {
+          name: "luna-superpi-discord",
+          status: "Development",
+          image: true,
+        },
         { name: "playground", status: "Development", image: true },
-        { name: "recipe-book-core", status: "Maintenance", image: true },
-        { name: "summerysaturn.github.io", status: "Development", image: true },
-        { name: "y1-410A2-UnityProject", status: "Development", image: true },
-        { name: "y1-university", status: "Development", image: true },
+        {
+          name: "recipe-book-core",
+          status: "Maintenance",
+          image: true,
+        },
+        {
+          name: "summerysaturn.github.io",
+          status: "Development",
+          image: true,
+        },
+        {
+          name: "y1-410A2-UnityProject",
+          status: "Development",
+          image: true,
+        },
+        { name: "y1-csg-uni", status: "Development", image: false },
+        { name: "y2-csg-uni", status: "Development", image: false },
       ];
 
       // iterate over each repo in the json response. see api.github.com docs.
