@@ -1,0 +1,25 @@
+{
+  "name": "lilykiwi.github.io",
+  "version": "0.1.0",
+  "description": "Portfolio website built with sass",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass src/scss/main.scss public/css/main.css --no-source-map && cleancss public/css/main.css -o public/css/main.css",
+    "preinstall": "rm -rf public && mkdir -p public/css/fonts && mkdir -p public/image && mkdir -p public/js",
+    "build": "npm run build-css && cp -r src/html/* public/ && cp -r node_modules/bootstrap-icons/font/fonts/* public/css/fonts && cp -r src/js/* public/js/ && cp -r src/image/* public/image/",
+    "prewatch": "livereload public/ &",
+    "watch": "nodemon --watch src -e html,scss,js -x \"npm run build\""
+  },
+  "author": "Lily Riley (@lilykiwi_)",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.3.3",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.12",
+    "sass": "^1.38.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.5.0"
+  }
+}

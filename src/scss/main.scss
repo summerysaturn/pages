@@ -1,0 +1,96 @@
+// Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #14161a;
+$body-color: #ffffff;
+$primary: rgba(164, 82, 213, 1);
+$secondary: #14161a;
+
+// Import the rest of bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Fira+Sans&display=swap");
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.font-monospace {
+  font-family: "Fira Code", monospace;
+}
+
+@include media-breakpoint-up(xl) {
+  .body {
+    max-width: 992px;
+  }
+}
+
+.body {
+  padding: 0;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .header {
+    text-align: center;
+  }
+}
+
+.header {
+  background: #558bc2;
+  background: -moz-linear-gradient(133deg, #558bc2 0%, #a452d5 100%);
+  background: -webkit-linear-gradient(133deg, #558bc2 0%, #a452d5 100%);
+  background: linear-gradient(133deg, #558bc2 0%, #a452d5 100%);
+  padding: 4rem;
+}
+
+.label {
+  margin: 10px 0 0 5px;
+  font-size: large;
+  font-weight: 500;
+  font-family: "Fira Code", monospace;
+}
+
+.link-undecorated {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-undecorated:hover {
+  color: #aaa;
+}
+
+.fadein {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.account-image-solo {
+  height: 14rem;
+  border-radius: 50% !important;
+}
+
+.timeline-arrow {
+  position: absolute;
+  top: 0.5rem;
+  right: 100%;
+  border: 15px solid transparent;
+  border-right: 15px solid $secondary;
+}
